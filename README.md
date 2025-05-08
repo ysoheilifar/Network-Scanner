@@ -36,9 +36,11 @@ Results are printed in a table and saved into a CSV file called csvfile.csv.
 pip install scapy mac-vendor-lookup
 ```
 2. Run the Script:
+    - Single-process version
 ```python
 python scan_vendor.py
 ```
+    - Multiprocessing (parallel) version
 ```python
 scan_vendor_multiproc.py
 ```
