@@ -45,7 +45,6 @@ python Scan_Vendor.py
 python Scan_Vendor_MultiProc.py
 ```
 3. Enter network range:
-
 E.g., 192.168.1.0/24
 Results will be printed and saved.
 
