@@ -1,2 +1,40 @@
-# Network-Scanner
-Network Scanner with MAC Vendor Lookup
+# Network Scanner with MAC Vendor Lookup
+This Python script scans a given local network, detects active devices, and displays important details for each device, including:
+
+- IP Address
+- Hostname
+- MAC Address
+- Device Vendor (Manufacturer)
+
+The script uses the scapy library for low-level network scanning, and mac-vendor-lookup for finding the hardware manufacturer based on MAC address. Device information is also saved to a CSV file for later reference.
+
+Two versions are included:
+- scan_vendor.py: Single-process version
+- scan_vendor_multiproc.py: Multiprocessing (parallel) version
+Both scripts save results to a CSV file and print device details in a table.
+
+> Multiprocessing
+> A faster version using Python’s multiprocessing (ProcessPoolExecutor) to resolve hostnames and vendors in parallel for all detected devices, greatly improving speed on larger networks.
+
+### How It Works
+1. Scan the Network
+The script sends ARP requests to the specified network range to discover connected devices. For each device that responds, it collects the IP and MAC addresses.
+
+2. Hostname Resolution
+It tries to resolve each IP address to its hostname using a reverse DNS lookup. If not possible, it marks the device as unnamed.
+
+3. Vendor Lookup
+Using the MAC address, it identifies the manufacturer (vendor) of each device.
+
+4. Output
+Results are printed in a table and saved into a CSV file called csvfile.csv.
+
+### Usage
+1. Install Requirements:
+```python
+pip install scapy mac-vendor-lookup
+```
+2. Run the Script:
+```python
+python script_name.py
+```
