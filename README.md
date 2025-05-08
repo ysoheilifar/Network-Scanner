@@ -60,7 +60,8 @@ Results will be printed and saved.
 > - Even if you give Scapy a range outside your subnet, you will receive “no devices found.”
 
 ### Summary Table
-| Method | Same subnet? | Remote subnet? | MAC/Vendor? | Requirements
----------------------------------------------------------------------
+
+| Method | Same subnet? | Remote subnet? | MAC/Vendor? | Requirements|
+---------|--------------|----------------|-------------|-------------|
 Direct ARP scan (Scapy)	| [x] | [] | [x] | Your device on target subnet
 
