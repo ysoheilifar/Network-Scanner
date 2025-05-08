@@ -63,5 +63,6 @@ Results will be printed and saved.
 
 | Method | Same subnet? | Remote subnet? | MAC/Vendor? | Requirements|
 ---------|--------------|----------------|-------------|-------------|
-Direct ARP scan (Scapy)	| [x] | [] | [x] | Your device on target subnet
+Direct ARP scan (Scapy)	| [x] | [-] | [x] | Your device on target subnet
+Agent/script on remote subnet | ✅	
 
