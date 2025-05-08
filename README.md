@@ -58,3 +58,9 @@ Results will be printed and saved.
 > - ARP will not find devices outside your own subnet
 > - ARP requests are local only (layer 2: broadcast, not routable).
 > - Even if you give Scapy a range outside your subnet, you will receive “no devices found.”
+
+### Summary Table
+| Method | Same subnet? | Remote subnet? | MAC/Vendor? | Requirements
+---------------------------------------------------------------------
+Direct ARP scan (Scapy)	| [x] | [] | [x] | Your device on target subnet
+
