@@ -40,7 +40,7 @@ pip install scapy mac-vendor-lookup
 ```python
 python scan_vendor.py
 ```
-    - Multiprocessing (parallel) version
+- Multiprocessing (parallel) version
 ```python
 scan_vendor_multiproc.py
 ```
