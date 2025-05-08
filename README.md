@@ -45,6 +45,7 @@ python scan_vendor.py
 scan_vendor_multiproc.py
 ```
 3. Enter network range:
+
 E.g., 192.168.1.0/24
 Results will be printed and saved.
 
@@ -52,7 +53,7 @@ Results will be printed and saved.
 - You may need administrator/root access to send ARP requests.
 - Both scripts are for educational, IT, and troubleshooting purposes.
 - For best results, use them in local networks with manageable device counts.
-- 
+
 > [!CAUTION]
 > - ARP will not find devices outside your own subnet
 > - ARP requests are local only (layer 2: broadcast, not routable).
