@@ -9,8 +9,8 @@ This Python script scans a given local network, detects active devices, and disp
 The script uses the scapy library for low-level network scanning, and mac-vendor-lookup for finding the hardware manufacturer based on MAC address. Device information is also saved to a CSV file for later reference.
 
 Two versions are included:
-- scan_vendor.py : Single-process version
-- scan_vendor_multiproc.py : Multiprocessing (parallel) version
+- Scan_Vendor.py : Single-process version
+- Scan_Vendor_MultiProc.py : Multiprocessing (parallel) version
 Both scripts save results to a CSV file and print device details in a table.
 
 > Multiprocessing
@@ -38,11 +38,11 @@ pip install scapy mac-vendor-lookup
 2. Run the Script:
 - Single-process version
 ```python
-python scan_vendor.py
+python Scan_Vendor.py
 ```
 - Multiprocessing (parallel) version
 ```python
-scan_vendor_multiproc.py
+python Scan_Vendor_MultiProc.py
 ```
 3. Enter network range:
 
