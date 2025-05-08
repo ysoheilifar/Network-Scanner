@@ -63,6 +63,8 @@ Results will be printed and saved.
 
 | Method | Same subnet? | Remote subnet? | MAC/Vendor? | Requirements|
 ---------|--------------|----------------|-------------|-------------|
-Direct ARP scan (Scapy)	| [x] | [-] | [x] | Your device on target subnet
-Agent/script on remote subnet | ✅	
-
+Direct ARP scan (Scapy)	| ✅	 | ❌ | ✅ | Your device on target subnet|
+Agent/script on remote subnet | ✅	| ✅ | ✅ | Script running remotely|
+Router ARP/SNMP table | ✅ | ✅ | ✅ | Router access|
+DHCP server lease list | ✅ | ✅ | ✅ | DHCP server management|
+Nmap/ICMP port scan | ✅ | ✅ | ✅ | ❌ |
